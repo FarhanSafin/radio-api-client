@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading/Loading';
 import { useNavigate } from 'react-router-dom';
 
-const UpdateStation = () => {const {data: radios, isLoading} = useQuery('radios', () => fetch('http://localhost:5000/radionames', {
+const UpdateStation = () => {const {data: radios, isLoading} = useQuery('radios', () => fetch('https://radio-widget-t4.herokuapp.com/radionames', {
     method: 'GET',
 }).then(res=>res.json()));
 

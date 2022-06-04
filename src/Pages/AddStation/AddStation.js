@@ -23,7 +23,7 @@ const AddStation = () => {
         frequency: event.frequency
       }
 
-      fetch(`http://localhost:5000/addradio`,
+      fetch(`https://radio-widget-t4.herokuapp.com/addradio`,
       {
         method: 'POST',
         headers:

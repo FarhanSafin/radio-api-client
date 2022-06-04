@@ -6,7 +6,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading/Loading';
 
 const DeleteStation = () => {
-    const {data: radios, isLoading, refetch} = useQuery('radios', () => fetch('http://localhost:5000/radionames', 
+    const {data: radios, isLoading, refetch} = useQuery('radios', () => fetch('https://radio-widget-t4.herokuapp.com/radionames', 
     {
         method: 'GET',
     })
@@ -14,7 +14,7 @@ const DeleteStation = () => {
 
     const handleDelete = id => 
     {
-        fetch(`http://localhost:5000/radiostation/${id}`, 
+        fetch(`https://radio-widget-t4.herokuapp.com/radiostation/${id}`, 
         {
             method: 'DELETE',
             headers: {
