@@ -7,6 +7,7 @@ import UpdateStation from './Pages/UpdateStation/UpdateStation';
 import DeleteStation from './Pages/DeleteStation/DeleteStation';
 import Login from './Pages/Login/Login/Login';
 import Registration from './Pages/Login/Registration/Registration';
+import UpdateForm from './Pages/UpdateForm/UpdateForm';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/add" element={<AddStation></AddStation>} />
         <Route path="/update" element={<UpdateStation></UpdateStation>} />
         <Route path="/delete" element={<DeleteStation></DeleteStation>} />
+        <Route path="/updateradio/:radioId" element={<UpdateForm></UpdateForm>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/registration" element={<Registration></Registration>} />
       </Routes>

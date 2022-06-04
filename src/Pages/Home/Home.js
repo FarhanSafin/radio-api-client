@@ -11,7 +11,7 @@ const Home = () => {
     }else{
       return (
         <div className='container mx-auto text-center'>
-            <h2 className='mt-20'>Available Radios: {radios.length}</h2>
+            <h2 className='mt-20'>Available Radio Stations: {radios.length}</h2>
             <div className="overflow-x-auto">
             <table className="table w-full mt-52">
     <thead>
