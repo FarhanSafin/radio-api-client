@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Radio Api Service
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Radio Api Service.
 
-## Available Scripts
+## Features and Functionalities
 
-In the project directory, you can run:
+A radio station showing app. It fetches all the radio station from mongodb and its server. You can delete station, update station information, add new station if required. About page is protected which means you need to login to be able to visit the page.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In Short :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ * See all the radio stations available.
+ * Add new radio station.
+ * Delete existing radio station.
+ * Update existing radio station.
+ * oAuth2 used to login.
+ * About page is protected.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `React`
 
-### `npm run build`
+A JavaScript library for building user interfaces
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `TailwindCSS`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Used to quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `DaisyUI`
 
-### `npm run eject`
+A component library of TailwindCss. Used to design the whole website.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `React-Router`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+With React Router, routing through page is easier. Help you to route through different pages of a web app. Nested routes add both segments to the URL and layouts to the UI hierarchy. As the URL changes, your layouts automatically change with it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `React-Toastify`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React-Toastify allows you to add notifications to your app with ease.
 
-## Learn More
+### `Firebase`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Firebase helps you build and run successful apps. In this web app firebase takes care of the authentication and authorization system. It is backed by Google.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `React Query`
 
-### Code Splitting
+Used to fetch data from server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `React Hook Form`
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can take input from the user using react hook form. It makes life easier of the developer as it is easy to implement.
