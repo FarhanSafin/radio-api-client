@@ -123,7 +123,7 @@ minLength: {
   {signInError}
   <input className='btn w-full max-w-xs' type="submit" value="Register" />
 </form>
-<p>Already have an account? <Link className='text-secondary' to='/login'>Please Login</Link></p>
+<p>Already have an account? <Link className='text-primary' to='/login'>Please Login</Link></p>
 <div className="divider">OR</div>
 <button
 onClick={() => signInWithGoogle()}

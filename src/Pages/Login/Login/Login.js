@@ -102,7 +102,7 @@ const Login = () => {
       {signInError}
       <input className='btn w-full max-w-xs' type="submit" value="Login" />
     </form>
-    <p>New here?<Link className='text-secondary' to='/registration'> Create a Account.</Link></p>
+    <p>New here?<Link className='text-primary' to='/registration'> Create a Account.</Link></p>
     <div className="divider">OR</div>
     <button
     onClick={() => signInWithGoogle()}

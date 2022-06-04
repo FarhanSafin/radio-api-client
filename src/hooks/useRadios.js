@@ -11,9 +11,8 @@ const useRadios = () => {
         .then(data => setRadios(data));
     }, []);
 
-
     return [radios, setRadios];
-
+    
     }
 
 export default useRadios;

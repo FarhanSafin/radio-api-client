@@ -5,40 +5,38 @@ import Loading from '../Shared/Loading/Loading'
 const Home = () => {
     const [radios] = useRadios();
 
-
-    if(radios.length === 0){
+    if(radios.length === 0)
+    {
       return <Loading></Loading>
-    }else{
+    }
+    else
+    {
       return (
         <div className='container mx-auto text-center'>
-            <h2 className='mt-20'>Available Radio Stations: {radios.length}</h2>
+            <h2 className='mt-20 text-4xl text-primary'>Available Radio Stations: {radios.length}</h2>
             <div className="overflow-x-auto">
             <table className="table w-full mt-52">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Radio Station's Name</th>
-        <th>Radio Station's Frequency</th>
-      </tr>
-    </thead>
-    <tbody>
-    {
-        radios.map((radio, index)=>      <tr key={radio._id}>
-        <th>{index+1}</th>
-        <td>{radio.name}</td>
-        <td>{radio.frequency}</td>
-      </tr>)
-    }
-    </tbody>
-  </table>
-  </div>
+            <thead>
+              <tr>
+              <th></th>
+              <th>Radio Station's Name</th>
+              <th>Radio Station's Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+            {
+              radios.map((radio, index)=><tr key={radio._id}>
+                <th>{index+1}</th>
+                <td>{radio.name}</td>
+                <td>{radio.frequency}</td>
+              </tr>)
+            }
+            </tbody>
+            </table>
+            </div>
         </div>
     );
-    }
-
-
-
-    
+    } 
 };
 
 export default Home;
