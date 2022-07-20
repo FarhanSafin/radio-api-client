@@ -6,7 +6,7 @@ const useRadios = () => {
     const [radios, setRadios] = useState([]);
 
     useEffect(()=>{
-        fetch('https://radio-widget-t4.herokuapp.com/radionames')
+        fetch('https://radio-api-t12.herokuapp.com/radionames')
         .then(res => res.json())
         .then(data => setRadios(data));
     }, []);
