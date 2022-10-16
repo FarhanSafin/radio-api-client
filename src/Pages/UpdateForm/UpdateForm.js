@@ -9,7 +9,7 @@ const UpdateForm = () => {
     const navigate = useNavigate();
 
     useEffect(() => 
-    {const url = `https://radio-api-t12.herokuapp.com/updateradio/${radioId}`;
+    {const url = `https://radio-service.onrender.com/updateradio/${radioId}`;
       fetch(url , {
         method: 'GET'
     })
@@ -23,7 +23,7 @@ const UpdateForm = () => {
         frequency: event.frequency
       }
       
-      fetch(`https://radio-api-t12.herokuapp.com/updateradio/${radio._id}`,{
+      fetch(`https://radio-service.onrender.com/updateradio/${radio._id}`,{
         method: 'PUT',
         headers:{
           'content-type': 'application/json'
